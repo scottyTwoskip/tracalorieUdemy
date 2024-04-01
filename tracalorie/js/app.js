@@ -93,11 +93,8 @@ class Workout {
     }
 }
 
-const tracker = new CalorieTracker()
-
-const breakfast = new Meal('Breakfast', 100)
-tracker.addMeal(breakfast)
-
-
-const run = new Workout('Morning run', 0)
-tracker.addWorkout(run)
+class App {
+    constructor() {
+        this._tracker = new CalorieTracker()
+    }
+}
